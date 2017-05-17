@@ -124,9 +124,10 @@ goog.exportPath_ = function(name, opt_object, opt_objectToExportTo) {
   // Internet Explorer exhibits strange behavior when throwing errors from
   // methods externed in this manner.  See the testExportSymbolExceptions in
   // base_test.html for an example.
-  if (!(parts[0] in cur) && cur.execScript) {
-    cur.execScript('var ' + parts[0]);
-  }
+  // Cedexis: Some customers prefer not to see this in the compiled code.
+  // if (!(parts[0] in cur) && cur.execScript) {
+  //   cur.execScript('var ' + parts[0]);
+  // }
 
   // Certain browsers cannot parse code in the form for((a in b); c;);
   // This pattern is produced by the JSCompiler when it collapses the
