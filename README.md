@@ -1,6 +1,7 @@
 # Closure Library [![Build Status](https://travis-ci.org/google/closure-library.svg?branch=master)](https://travis-ci.org/google/closure-library)
 
 Test
+Test
 
 Closure Library is a powerful, low-level JavaScript library designed
 for building complex and scalable web applications. It is used by many
